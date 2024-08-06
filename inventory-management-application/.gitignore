@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#files
+Inventory-Management-Application\inventory-management-application\firebase_config.js
