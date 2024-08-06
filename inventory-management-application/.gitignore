@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 #files
-Inventory-Management-Application\inventory-management-application\firebase_config.js
+\inventory-management-application\firebase_config.js
