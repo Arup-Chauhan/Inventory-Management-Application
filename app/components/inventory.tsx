@@ -1,7 +1,7 @@
-
 "use client";
 
 import React, { useState } from 'react';
+import { TextField, Button, List, ListItem, ListItemText, Typography } from '@mui/material';
 
 interface Item {
   id: number;
@@ -27,27 +27,32 @@ const Inventory: React.FC = () => {
 
   return (
     <div>
-      <h2>Inventory</h2>
-      <input
-        type="text"
-        placeholder="Item Name"
+      <Typography variant="h2">Inventory</Typography>
+      <TextField
+        label="Item Name"
+        variant="outlined"
         value={itemName}
         onChange={(e) => setItemName(e.target.value)}
+        margin="normal"
       />
-      <input
+      <TextField
+        label="Quantity"
         type="number"
-        placeholder="Quantity"
+        variant="outlined"
         value={itemQuantity}
         onChange={(e) => setItemQuantity(Number(e.target.value))}
+        margin="normal"
       />
-      <button onClick={addItem}>Add Item</button>
-      <ul>
+      <Button variant="contained" color="primary" onClick={addItem}>
+        Add Item
+      </Button>
+      <List>
         {items.map((item) => (
-          <li key={item.id}>
-            {item.name} - {item.quantity}
-          </li>
+          <ListItem key={item.id}>
+            <ListItemText primary={`${item.name} - ${item.quantity}`} />
+          </ListItem>
         ))}
-      </ul>
+      </List>
     </div>
   );
 };
