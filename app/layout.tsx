@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Inventory Management App",
-  description: "",
+  description: "An application to manage your inventory efficiently.",
 };
 
 export default function RootLayout({
