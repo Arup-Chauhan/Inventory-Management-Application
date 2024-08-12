@@ -1,6 +1,6 @@
 "use client";
 
-import { firestore } from '@/firebase_config';
+import { firestore } from '@/firebase_config_sample'; //Adjust as needed
 import {
     collection,
     doc,
