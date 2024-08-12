@@ -15,11 +15,11 @@ The Inventory Management Application is a simple yet effective tool designed to 
 
 ## Technologies Used
 
-- **Next.js**: A React framework for building server-side rendering and static web applications.
-- **React**: A JavaScript library for building user interfaces.
-- **Material-UI**: A popular React UI framework with pre-built components and themes.
-- **Firebase**: A platform by Google offering real-time database, authentication, and hosting services.
-- **TypeScript**: A statically typed superset of JavaScript that enhances code quality and developer productivity.
+- **Next.js**
+- **React**
+- **Material-UI**
+- **Firebase**
+- **TypeScript**
 
 ## Getting Started
 
